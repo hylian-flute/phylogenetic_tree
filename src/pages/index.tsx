@@ -13,7 +13,10 @@ const draw = () => {
     layout: new go.TreeLayout(),
   });
   phylogeneticTree.nodeTemplate = new go.Node("Auto").add(
-    new go.TextBlock({ margin: 16 }).bind("text", "key")
+    new go.TextBlock({ margin: 8, width: 128, textAlign: "center" }).bind(
+      "text",
+      "key"
+    )
   );
   phylogeneticTree.model = new go.TreeModel(phylogeneticTreeData);
 };
