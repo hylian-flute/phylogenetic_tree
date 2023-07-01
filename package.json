@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gatsby": "^5.11.0",
+    "gojs": "^2.3.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
