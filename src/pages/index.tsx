@@ -12,6 +12,9 @@ const draw = () => {
   const phylogeneticTree = new go.Diagram("phylogeneticTree", {
     layout: new go.TreeLayout(),
   });
+  phylogeneticTree.linkTemplate = new go.Link({
+    routing: go.Link.Orthogonal,
+  }).add(new go.Shape());
   phylogeneticTree.nodeTemplate = new go.Node("Auto").add(
     new go.TextBlock({ margin: 8, width: 128, textAlign: "center" }).bind(
       "text",
